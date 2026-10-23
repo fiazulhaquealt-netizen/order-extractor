@@ -1,5 +1,5 @@
 {% extends "base.html" %}{% block body %}
-<header class="top"><div><h1>Order Book</h1><div class="crumb">Dashboard &gt; <b>Order Book</b></div></div>
+<header class="top"><div><h1>Order Book</h1></div>
 {% if ai.reader == 'openrouter' %}<div id="aiw" class="pill {{ 'failed' if not ai.configured else '' }}">OpenRouter · {{ 'key missing' if not ai.configured else 'waiting for free API retry' if ai.waiting_retry else 'key configured' }} · {{ai.running_api_reads}} reads running</div>{% else %}<div id="aiw" class="pill {{ 'done' if ws.online else 'failed' }}">AI worker {{ 'online' if ws.online else 'offline' }}{% if ws.last_seen_s is not none %} · seen {{ws.last_seen_s}}s ago{% endif %} · queue {{ws.queued}}</div>{% endif %}</header>
 <section class="card"><h3>Auto Extract from document</h3>
 <form id="up" class="drop"><input type="file" name="file" id="f" accept=".pdf,.png,.jpg,.jpeg,.webp,.tif,.tiff,.xlsx,.csv,.docx,.zip">
