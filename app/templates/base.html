@@ -3,37 +3,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/static/app.css"></head>
 <body class="{% block body_class %}{% endblock %}">
 <aside class="side" aria-label="Main navigation">
-  <a class="logo" href="/"><span class="hex" aria-hidden="true">⬡</span><span><b>Texora</b> 360<small>ERP Solutions</small></span><span class="side-toggle" aria-hidden="true">◫</span></a>
+  <a class="logo" href="/"><span class="hex" aria-hidden="true">⬡</span><span><b>Texora</b> 360<small>ERP Solutions</small></span></a>
   <nav>
-    <a href="/"><span aria-hidden="true">▦</span> Dashboard</a>
-    <h6>SALES &amp; ORDER</h6>
     <a class="on" href="/" aria-current="page"><span aria-hidden="true">▤</span> Order Book</a>
-    <span class="nav-item"><span aria-hidden="true">▥</span> Order Projection</span>
-    <span class="nav-item"><span aria-hidden="true">◉</span> Capacity Board</span>
-    <span class="nav-item"><span aria-hidden="true">◈</span> T&amp;A</span>
-    <h6>COSTING &amp; PRICING</h6>
-    <span class="nav-item"><span aria-hidden="true">▣</span> Cost sheet</span>
-    <span class="nav-item"><span aria-hidden="true">▤</span> Requisition Sample</span>
-    <span class="nav-item"><span aria-hidden="true">♧</span> Price Approvals</span>
-    <h6>PROCUREMENT &amp; MATERIALS</h6>
-    <span class="nav-item"><span aria-hidden="true">▣</span> Materials Booking</span>
-    <span class="nav-item"><span aria-hidden="true">▤</span> Mat. Inventory</span>
-    <h6>COMMERCIAL MANAGEMENT</h6>
-    <span class="nav-item"><span aria-hidden="true">▤</span> PI Management <i>▾</i></span>
-    <span class="nav-item"><span aria-hidden="true">🛒</span> PO Management <i>▾</i></span>
-    <span class="nav-item"><span aria-hidden="true">▰</span> Payment Manager <i>▾</i></span>
-    <h6>PRODUCTION PLANNING</h6>
-    <span class="nav-item"><span aria-hidden="true">▥</span> Line Planning Board</span>
-    <h6>REPORTS &amp; ANALYTICS</h6>
-    <span class="nav-item"><span aria-hidden="true">▤</span> Reports <i>▾</i></span>
-    <span class="nav-item"><span aria-hidden="true">▧</span> Production File Prepare</span>
-    <h6>BUYER MANAGEMENT</h6>
-    <span class="nav-item"><span aria-hidden="true">♟</span> Buyer List</span>
-    <h6>SETTINGS</h6>
-    <span class="nav-item"><span aria-hidden="true">⚙</span> Task Allocation Process</span>
     <a class="reader-link" href="/#status">AI reader status</a>
   </nav>
-  <div class="side-profile"><span class="avatar" aria-hidden="true">T</span><span>Order workspace<small>Merchandiser</small></span><span class="profile-arrow" aria-hidden="true">▸</span></div>
+  <div class="side-profile"><span class="avatar" aria-hidden="true">T</span><span>Order workspace<small>Merchandiser</small></span></div>
   <form method="post" action="/logout" class="logout"><button class="ic">↪ <span>Logout</span></button></form>
 </aside>
 <main>{% block body %}{% endblock %}</main></body></html>

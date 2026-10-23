@@ -4,7 +4,7 @@
 {% block body %}
 <header class="top">
   <div><div class="title-line"><h1 id="order-title">{{ "Order #" ~ o.id if o.id else "New Order" }}</h1><div class="order-state"><span id="save-state" class="pill" role="status"></span><span id="extraction-state" role="status"></span></div></div>
-    <div class="crumb">Dashboard &gt; <a href="/">Order Book</a> &gt; {{ "Edit Order" if o.id else "Add Order" }} &gt; <b id="crumb-title">{{ "Order #" ~ o.id if o.id else "New Order" }}</b></div>
+    <div class="crumb"><a href="/">Order Book</a> &gt; {{ "Edit Order" if o.id else "Add Order" }} &gt; <b id="crumb-title">{{ "Order #" ~ o.id if o.id else "New Order" }}</b></div>
   </div>
   <div class="header-actions">{% if o.id %}<button class="btn ghost" onclick="del()">Delete</button>{% endif %}<button class="btn ghost save-button" onclick="save('draft')">▣ &nbsp; Save as Draft</button><button class="btn dark save-button primary-save" onclick="save('saved')">{{ "Save" if o.id else "Add Now" }}</button></div>
 </header>
