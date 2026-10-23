@@ -17,3 +17,9 @@ worker/outbox/
 worker/.tick.lock
 
 .playwright-mcp/
+worker/cicd.log
+worker/cicd.pid
+worker/.cicd_state.json
+worker/.cicd.lock
+worker/run_forever.pid
+/worker.log
